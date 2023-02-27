@@ -7,21 +7,23 @@ body {
 body main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   height: 100vh;
   width: 1200px;
   margin: 0 auto;
 }
 body main section {
   width: 300px;
-  border: 1px solid rgba(102, 102, 102, 0.493);
+  border: 2px solid rgba(102, 102, 102, 0.493);
   border-radius: 10px;
-  margin: 0 10px;
-  min-height: 500px;
+  margin: 50px 10px 100px 10px;
+  min-height: 300px;
   box-sizing: border-box;
   background-color: white;
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px rgba(31, 31, 31, 0.493) inset, 0 0 10px rgb(102, 21, 252);
 }
-body main section h2 {
+body main section h2, body main section .addTask {
   margin: 16px;
   font-family: "Poppins";
   font-style: normal;
@@ -29,19 +31,35 @@ body main section h2 {
   font-size: 16px;
   line-height: 24px;
 }
+body main section .headTodo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main section .headTodo .addTask {
+  cursor: pointer;
+  transition: 0.5s;
+}
+body main section .headTodo .addTask:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: #5114f7 5px 5px 10px, #16f7be -5px -5px 10px, #cd14fc 5px -5px 10px, #ff1111 -5px 5px 10px;
+}
 body main section .task {
   margin: 16px;
   border: 1px solid #666666;
   border-radius: 4px;
   padding: 8px;
   gap: 8px;
-  cursor: all-scroll;
+  cursor: grab;
+  width: 250px;
+  background: white;
 }
 body main section .task .priority {
   background: #B8EBB0;
   border-radius: 20px;
   width: 35px;
   height: 23px;
+  padding: 0 10px;
   font-weight: 400;
   font-size: 10px;
   line-height: 15px;

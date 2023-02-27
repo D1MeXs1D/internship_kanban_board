@@ -1,0 +1,30 @@
+header {
+  background-color: aliceblue;
+}
+header .container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+header .container .button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .container .button .changingTheme:hover {
+  cursor: pointer;
+}
+header .logo img {
+  width: 200px;
+}
+header .addTask {
+  cursor: pointer;
+  transition: 0.5s;
+  transition: 0.5s;
+}
+header .addTask:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: #5114f7 5px 5px 10px, #16f7be -5px -5px 10px, #cd14fc 5px -5px 10px, #ff1111 -5px 5px 10px;
+}/*# sourceMappingURL=header.css.map */

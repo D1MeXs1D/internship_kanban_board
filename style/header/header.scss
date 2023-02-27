@@ -1,0 +1,39 @@
+header {
+    background-color: aliceblue;
+    
+
+    .container {
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .button {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+
+            .changingTheme:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .logo{ 
+        img {
+            width: 200px;
+        }
+    }
+
+    .addTask {
+        cursor: pointer;
+        transition: 0.5s;
+        transition:  0.5s;
+    }
+
+    .addTask:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: #5114f7 5px 5px 10px, #16f7be -5px -5px 10px, #cd14fc 5px -5px 10px, #ff1111 -5px 5px 10px;
+    }
+}
